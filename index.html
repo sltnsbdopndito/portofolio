@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio Saya</title>
+    <link rel="stylesheet" href="styles5.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-qOc5w4Og3DGhJ%2BwyrwewMYV/ziXj2z5kOOWGm3VrTF/az6z2JpsXIfaUKAM4jmNCUwDhEDPOZqw7yhN/mBRtQA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="navbar">
+      <ul class="nav-links">
+        <li><a href="#">Beranda</a></li>
+        <li><a href="portofolio">Portofolio</a></li>
+        <li><a href="kontak">Kontak</a></li>
+      </ul>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="profile">
+        <div class="profile-info">
+          <p>Hello Maxians, perkenalkan nama saya</p>
+          <h2><span class="typing-animation"></span><span id="typed-text"></span></h2>
+          <p>
+            Saya seorang front-end developer yang kreatif dengan pengalaman di kampus membuat website. Memiliki kemampuan dalam mengembangkan dan menguji website dengan teknologi terkini. Sudah menggunakan berbagai bahasa pemrograman
+            seperti Java, Python, PHP, dan Pemrograman C++. Saat ini, saya ingin mencari tantangan terkait cara mengoptimalkan user experience.
+          </p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/poncol88/"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://www.instagram.com/accounts/onetap/?next=https%3A%2F%2Fwww.instagram.com%2F"><i class="fab fa-instagram-square"></i></a>
+            <a href="https://www.tiktok.com"><i class="fab fa-tiktok"></i></a>
+          </div>
+          <div class="next-button">
+            <button>Next</button>
+          </div>
+        </div>
+        <div class="profile-image">
+          <img src="foto/123.png" alt="Foto Profil" />
+        </div>
+      </div>
+    </div>
+
+    <div id="portofolio" class="content">
+      <div class="portofolio-item">
+        <img src="foto/btcmp.jpeg" alt="Foto 1" />
+        <div class="item-content">
+          <h3>Bootcamp Data Mining & Data Analis</h3>
+          <p>Bootcamp ini diadakan untuk pertama kali tahun lalu di kampus USNI bersama MAXY ACADEMY.</p>
+        </div>
+      </div>
+      <div class="portofolio-item">
+        <img src="foto/p2m.jpeg" alt="Foto 2" />
+        <div class="item-content">
+          <h3>Pengabdian Pada Masyarakat Bandung</h3>
+          <p>Setiap tahun pengabdian ini selalu ada dari tahun ke tahun dan Lembaga Pengabdian kepada Masyarakat mempuntai.</p>
+        </div>
+      </div>
+      <div class="portofolio-item">
+        <img src="foto/seminar.jpeg" alt="Foto 3" />
+        <div class="item-content">
+          <h3>Pelantikan BEM</h3>
+          <p>
+            Pelantikan ini diadakan secara online dengan kritik dan saran langsung melalui live zoom. Pelantikan bukan hanya sebagai formalitas pendistribusian jabatan, melainkan juga sebagai sarana penguatan, pengembangan, dan pemberdayaan
+            potensi diri dalam upaya peningkatan kompetensi aparatur.
+          </p>
+        </div>
+      </div>
+      <div class="portofolio-item">
+        <img src="foto/seminar2.jpeg" alt="Foto 4" />
+        <div class="item-content">
+          <h3>Seminar USNI X MAXY ACADEMY</h3>
+          <p>Seminar ini juga dalam bantuan MAXY ACADEMY dan berjudul APPLICATION OF MACHINE LEARNING IN THE BUSINESS.</p>
+        </div>
+      </div>
+      <div class="portofolio-item12">
+        <video controls>
+          <source src="foto/coding.mp4" type="video/mp4" />
+        </video>
+        <div class="item-content">
+          <h3>WEBSITE E-COMMERCE</h3>
+          <p>
+            Website ini saya buat untuk pengumpulan tugas dan mempresentasikannya di bulan lalu, dan Website ini yang saya banggakan dari Website yang saya sudah buat namun masih banyak langkah langkah selanjutnya yang belum saya
+            aplikasikan kedalam Website saya ini.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="kontak" class="content">
+      <div class="contact-container">
+        <h2>Hubungi Kami</h2>
+        <p>Jangan ragu untuk menghubungi kami untuk pertanyaan atau kerja sama!</p>
+        <form id="contact-form">
+          <div class="form-group">
+            <input type="text" id="name" name="name" placeholder="Nama" required />
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" name="email" placeholder="Email" required />
+          </div>
+          <div class="form-group">
+            <textarea id="message" name="message" placeholder="Pesan" required></textarea>
+          </div>
+          <button type="submit">Kirim</button>
+        </form>
+      </div>
+    </div>
+
+    <button id="scrollToTopBtn" title="Kembali ke Atas">&uarr;</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>

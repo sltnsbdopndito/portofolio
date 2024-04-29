@@ -1,0 +1,356 @@
+body {
+  background-image: url("foto/dfa.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.navbar {
+  background-color: #333;
+  overflow: hidden;
+  padding: 20px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  float: left;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.logo:hover {
+  color: white;
+}
+
+.nav-links {
+  float: right;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  display: inline-block;
+  margin-left: 20px;
+  list-style: none;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #ddd;
+}
+
+.burger {
+  display: none;
+  float: right;
+  cursor: pointer;
+}
+
+.line1,
+.line2,
+.line3 {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+.change .line1 {
+  -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.change .line2 {
+  opacity: 0;
+}
+
+.change .line3 {
+  -webkit-transform: rotate(45deg) translate(-5px, -6px);
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.content {
+  text-align: center;
+  padding: 20px;
+}
+
+.profile {
+  background-color: #f2f2f2;
+  padding: 70px;
+  border-radius: 44px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile-image img {
+  width: 160px;
+  height: 170px;
+  border-radius: 40%;
+  margin-left: 90px;
+  margin-right: 50px;
+  opacity: 0;
+  animation: fadeInImage 2s ease forwards;
+}
+
+@keyframes fadeInImage {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.profile-info {
+  flex: 20;
+  text-align: left;
+  margin: 1px;
+}
+
+.social-icons a {
+  margin-right: 10px;
+}
+
+.typing-animation {
+  animation: blink-caret 0.75s step-end infinite;
+  display: inline-block;
+  margin-left: 3px;
+  vertical-align: middle;
+  opacity: 1;
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #000;
+  }
+}
+
+#typed-text {
+  animation: typing 3s steps(15, end);
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+#portofolio {
+  background-color: #f2f2f2;
+  padding: 70px;
+  border-radius: 44px;
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.portofolio-item {
+  width: 300px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  flex: 0 0 calc(50% - 20px);
+  margin-right: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.portofolio-item img,
+.portofolio-item video {
+  width: 90%;
+  height: 300px;
+  border-radius: 50px;
+  position: relative;
+  top: 20px;
+}
+
+.portofolio-item .item-content {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 0 0 10px 10px;
+  flex-grow: 1;
+  padding: 10px;
+}
+
+.portofolio-item .item-content h3 {
+  font-size: 24px;
+  color: #333;
+}
+
+.portofolio-item .item-content p {
+  font-size: 16px;
+  color: #666;
+}
+
+.next-button {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.next-button button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.next-button button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.profile-info p {
+  font-size: 20px;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in-delay:nth-child(1) {
+  animation: fadeInDelay 1s ease forwards;
+}
+
+.fade-in-delay:nth-child(2) {
+  animation: fadeInDelay 1s ease forwards 0.25s;
+}
+
+.fade-in-delay:nth-child(3) {
+  animation: fadeInDelay 1s ease forwards 0.5s;
+}
+
+.social-icons a {
+  display: inline-block;
+  animation: fadeInDelay 1s ease forwards;
+}
+
+.profile-info p,
+.profile-info h2 {
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+}
+
+.navbar {
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+}
+
+.portofolio-item12 {
+  display: flex;
+  align-items: center;
+}
+
+.portofolio-item12 video {
+  width: 66%;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.portofolio-item12 .item-content {
+  flex: 1;
+  text-align: left;
+  margin-left: 20px;
+}
+.contact-container {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  transition: transform 0.3s ease;
+}
+
+.contact-container:hover {
+  transform: translateY(-5px);
+}
+
+.contact-container h2 {
+  margin-bottom: 10px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+#scrollToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50%;
+}
+
+#scrollToTopBtn:hover {
+  background-color: #0056b3;
+}
